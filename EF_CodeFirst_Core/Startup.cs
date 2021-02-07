@@ -25,10 +25,9 @@ namespace EF_CodeFirst_Core
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<MyContext>(options =>
-
-            options.UseSqlServer("data source=localhost;" +
-            "initial catalog = MyContext; persist security info = True;" +
-            "Integrated Security = SSPI; MultipleActiveResultSets = true"));
+            options.UseSqlServer("data source=saeedbalkani.ir;" +
+            "initial catalog =webfront_EFCoreDB ; User ID =webfront_EFCore ;" +
+            "Password =184sRn@l ; MultipleActiveResultSets = true"));
 
             services.AddControllersWithViews();
         }
